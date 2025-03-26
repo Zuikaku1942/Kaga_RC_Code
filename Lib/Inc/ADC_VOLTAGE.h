@@ -13,7 +13,7 @@
 void ADC_VOLTAGE_MEASURE();
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc);
 void HAL_DMA_IRQHandler(DMA_HandleTypeDef *hdma);
-int fputc(int ch, FILE *f);
+
 
 
 

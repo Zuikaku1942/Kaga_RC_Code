@@ -50,7 +50,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
         Statistic_frame[3] = 0x77; // 'w' - 帧头第4字节
         Statistic_frame[4] = (ADC_VOLTAGE_VALUE >> 8) & 0xFF; // 数据高字节
         Statistic_frame[5] = ADC_VOLTAGE_VALUE & 0xFF;        // 数据低字节
-        HAL_UART_Transmit(&huart1, Statistic_frame, 6, HAL_MAX_DELAY);
+        HAL_UART_Transmit(&huart2, Statistic_frame, 6, HAL_MAX_DELAY);
     }
 }
 

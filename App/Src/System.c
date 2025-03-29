@@ -43,3 +43,4 @@ void Get_voltage(void) {//这个是手动测试喵
     HAL_Delay(10); // 等待 DMA 完成，仅用于测试
     printf("Voltage sama is : %d\n meow~ ", ADC_VOLTAGE_VALUE);
 }
+

@@ -445,7 +445,13 @@
 		<Unit filename="C:/CubeIDE/RC_MISSION/Lib/Inc/ADC_VOLTAGE.h">
 			<Option target="RC_MISSION.elf"/>
 		</Unit>
+		<Unit filename="C:/CubeIDE/RC_MISSION/Lib/Inc/UART_FREQUENT.h">
+			<Option target="RC_MISSION.elf"/>
+		</Unit>
 		<Unit filename="C:/CubeIDE/RC_MISSION/Lib/Src/ADC_VOLTAGE.c">
+			<Option target="RC_MISSION.elf"/>
+		</Unit>
+		<Unit filename="C:/CubeIDE/RC_MISSION/Lib/Src/UART_FREQUENT.c">
 			<Option target="RC_MISSION.elf"/>
 		</Unit>
 		<Unit filename="C:/CubeIDE/RC_MISSION/STM32F407ZETX_FLASH.ld">

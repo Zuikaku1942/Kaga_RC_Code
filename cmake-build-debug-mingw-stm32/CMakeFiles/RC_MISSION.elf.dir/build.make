@@ -529,6 +529,20 @@ CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.s"
 	C:\Ccube_CLT\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\CubeIDE\RC_MISSION\Lib\Src\ADC_VOLTAGE.c -o CMakeFiles\RC_MISSION.elf.dir\Lib\Src\ADC_VOLTAGE.c.s
 
+CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj: CMakeFiles/RC_MISSION.elf.dir/flags.make
+CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj: C:/CubeIDE/RC_MISSION/Lib/Src/UART_FREQUENT.c
+CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj: CMakeFiles/RC_MISSION.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\CubeIDE\RC_MISSION\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj"
+	C:\Ccube_CLT\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj -MF CMakeFiles\RC_MISSION.elf.dir\Lib\Src\UART_FREQUENT.c.obj.d -o CMakeFiles\RC_MISSION.elf.dir\Lib\Src\UART_FREQUENT.c.obj -c C:\CubeIDE\RC_MISSION\Lib\Src\UART_FREQUENT.c
+
+CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.i"
+	C:\Ccube_CLT\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\CubeIDE\RC_MISSION\Lib\Src\UART_FREQUENT.c > CMakeFiles\RC_MISSION.elf.dir\Lib\Src\UART_FREQUENT.c.i
+
+CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.s"
+	C:\Ccube_CLT\STM32CubeCLT_1.16.0\GNU-tools-for-STM32\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\CubeIDE\RC_MISSION\Lib\Src\UART_FREQUENT.c -o CMakeFiles\RC_MISSION.elf.dir\Lib\Src\UART_FREQUENT.c.s
+
 # Object files for target RC_MISSION.elf
 RC_MISSION_elf_OBJECTS = \
 "CMakeFiles/RC_MISSION.elf.dir/App/Src/System.c.obj" \
@@ -563,7 +577,8 @@ RC_MISSION_elf_OBJECTS = \
 "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" \
 "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" \
 "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj" \
-"CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj"
+"CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj" \
+"CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj"
 
 # External object files for target RC_MISSION.elf
 RC_MISSION_elf_EXTERNAL_OBJECTS =
@@ -601,9 +616,10 @@ RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/s
 RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj
 RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj
+RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj
 RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/build.make
 RC_MISSION.elf: CMakeFiles/RC_MISSION.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\CubeIDE\RC_MISSION\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking C executable RC_MISSION.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\CubeIDE\RC_MISSION\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable RC_MISSION.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RC_MISSION.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/CubeIDE/RC_MISSION/cmake-build-debug-mingw-stm32/RC_MISSION.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/CubeIDE/RC_MISSION/cmake-build-debug-mingw-stm32/RC_MISSION.bin"

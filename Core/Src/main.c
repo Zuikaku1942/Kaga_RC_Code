@@ -19,11 +19,21 @@
   * PA6 TIM3 对应pwm的呼吸灯
   *
   * （以下为ADC测量电压相关引脚说明
-  * PA10  USART1 RX  对应电压测量值输
-  * PA10  USART1 TX  对应电压测量值输
-  * TIM5 用于全局中断，传输数
-  * PA0 ADC1 IN0 对应电压测量
+  * PA2  USART2 RX  对应电压测量输出 波特�?20000
+  * PA3  USART2 TX  对应电压测量输出 波特�?20000
+  * TIM5 用于全局中断，传输电�?
+  * PA0 ADC1 IN0 对应电压测量输入
+  *
+  * （以下为ADC测量电压相关引脚说明
+  * PA9  USART1 RX  对应报文输入，开启中�?
+  * PA10 USART1 TX  对应报文输入，开启中�?
+  * PB10 USART3 RX  对于频率的测量的输出
+  * PB11 USART3 TX  对于频率的测量的输出
+  *
+  *
   */
+
+
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -106,8 +116,10 @@ int main(void)
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_TIM5_Init();
+  MX_USART2_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim5);//开启tim
+  HAL_TIM_Base_Start_IT(&htim5);//�???启tim
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -172,30 +184,30 @@ void SystemClock_Config(void)
 #ifdef __GNUC__
 /* With GCC, small printf (option LD Linker->Libraries->Small printf set to 'Yes') calls __io_putchar() */
 /**
- * @brief  重定向printf函数输出到UART1 (GCC/CubeIDE编译器版本)
- * @note   此实现将printf输出重定向到UART1，波特率为2Mbps
+ * @brief  重定向printf函数输出到UART1 (GCC/CubeIDE编译器版�???)
+ * @note   此实现将printf输出重定向到UART1，波特率�???2Mbps
  *         支持在CubeIDE中使用printf进行调试输出
  * @param  ch: 要发送的字符
- * @retval 发送的字符
+ * @retval 发�?�的字符
  */
 int __io_putchar(int ch)
 {
-  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
   return ch;
 }
 #else
 /* 为Keil编译器重定向fputc函数 */
 /**
- * @brief  重定向printf函数输出到UART1 (Keil MDK编译器版本)
- * @note   此实现将printf输出重定向到UART1，波特率为2Mbps
+ * @brief  重定向printf函数输出到UART1 (Keil MDK编译器版�???)
+ * @note   此实现将printf输出重定向到UART1，波特率�???2Mbps
  *         支持在Keil中使用printf进行调试输出
  * @param  ch: 要发送的字符
- * @param  f: 文件指针(未使用)
- * @retval 发送的字符
+ * @param  f: 文件指针(未使�???)
+ * @retval 发�?�的字符
  */
 int fputc(int ch, FILE *f)
 {
-  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
   return ch;
 }
 #endif

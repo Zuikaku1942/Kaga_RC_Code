@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.27"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RC_MISSION.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RC_MISSION.elf-Debug-f1d9d7649d3a5cc053dc.json",
+					"jsonFile" : "target-RC_MISSION.elf-d17e86c7eaa0de4e6cef.json",
 					"name" : "RC_MISSION.elf",
 					"projectIndex" : 0
 				}

@@ -1,0 +1,4 @@
+../Lib/Src/UART_FREQUENT.c:20:6:External_Uart_Init	8	static
+../Lib/Src/UART_FREQUENT.c:25:6:Mikuma_HAL_UART_IRQHandler	24	static
+../Lib/Src/UART_FREQUENT.c:43:6:Parse_UART_Frame	16	static
+../Lib/Src/UART_FREQUENT.c:65:10:Frequent_analyze	4	static

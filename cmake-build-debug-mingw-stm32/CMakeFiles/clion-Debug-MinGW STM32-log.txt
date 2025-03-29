@@ -8,6 +8,23 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
+-- Minimal optimization, debug info included
+-- Configuring done (0.1s)
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= E:/Mikuma's chips with HAL/Toolchains/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe
+CMAKE_CXX_COMPILER= E:/Mikuma's chips with HAL/Toolchains/gcc-arm-none-eabi-10.3-2021.10-win32/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-c++.exe
+
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
 -- The C compiler identification is GNU 12.3.1
 -- The CXX compiler identification is GNU 12.3.1
 -- The ASM compiler identification is GNU
@@ -23,6 +40,6 @@ CMake Deprecation Warning:
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
--- Configuring done (3.9s)
+-- Configuring done (2.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/CubeIDE/RC_MISSION/cmake-build-debug-mingw-stm32

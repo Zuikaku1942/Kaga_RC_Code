@@ -904,6 +904,30 @@ Lib/Src/ADC_VOLTAGE.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RC_MISSION.elf.dir\build.make CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.s
 .PHONY : Lib/Src/ADC_VOLTAGE.c.s
 
+Lib/Src/UART_FREQUENT.obj: Lib/Src/UART_FREQUENT.c.obj
+.PHONY : Lib/Src/UART_FREQUENT.obj
+
+# target to build an object file
+Lib/Src/UART_FREQUENT.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RC_MISSION.elf.dir\build.make CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj
+.PHONY : Lib/Src/UART_FREQUENT.c.obj
+
+Lib/Src/UART_FREQUENT.i: Lib/Src/UART_FREQUENT.c.i
+.PHONY : Lib/Src/UART_FREQUENT.i
+
+# target to preprocess a source file
+Lib/Src/UART_FREQUENT.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RC_MISSION.elf.dir\build.make CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.i
+.PHONY : Lib/Src/UART_FREQUENT.c.i
+
+Lib/Src/UART_FREQUENT.s: Lib/Src/UART_FREQUENT.c.s
+.PHONY : Lib/Src/UART_FREQUENT.s
+
+# target to generate assembly for a file
+Lib/Src/UART_FREQUENT.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RC_MISSION.elf.dir\build.make CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.s
+.PHONY : Lib/Src/UART_FREQUENT.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1010,6 +1034,9 @@ help:
 	@echo ... Lib/Src/ADC_VOLTAGE.obj
 	@echo ... Lib/Src/ADC_VOLTAGE.i
 	@echo ... Lib/Src/ADC_VOLTAGE.s
+	@echo ... Lib/Src/UART_FREQUENT.obj
+	@echo ... Lib/Src/UART_FREQUENT.i
+	@echo ... Lib/Src/UART_FREQUENT.s
 .PHONY : help
 
 

@@ -64,6 +64,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj.d"
   "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj"
   "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj.d"
+  "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj"
+  "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj.d"
   "RC_MISSION.elf"
   "RC_MISSION.elf.manifest"
   "RC_MISSION.elf.pdb"

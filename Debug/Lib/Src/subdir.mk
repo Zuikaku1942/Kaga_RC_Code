@@ -5,13 +5,16 @@
 
 # 将这些工具调用的输入和输出添加到构建变量 
 C_SRCS += \
-../Lib/Src/ADC_VOLTAGE.c 
+../Lib/Src/ADC_VOLTAGE.c \
+../Lib/Src/UART_FREQUENT.c 
 
 OBJS += \
-./Lib/Src/ADC_VOLTAGE.o 
+./Lib/Src/ADC_VOLTAGE.o \
+./Lib/Src/UART_FREQUENT.o 
 
 C_DEPS += \
-./Lib/Src/ADC_VOLTAGE.d 
+./Lib/Src/ADC_VOLTAGE.d \
+./Lib/Src/UART_FREQUENT.d 
 
 
 # 每个子目录必须为构建它所贡献的源提供规则
@@ -21,7 +24,7 @@ Lib/Src/%.o Lib/Src/%.su Lib/Src/%.cyclo: ../Lib/Src/%.c Lib/Src/subdir.mk
 clean: clean-Lib-2f-Src
 
 clean-Lib-2f-Src:
-	-$(RM) ./Lib/Src/ADC_VOLTAGE.cyclo ./Lib/Src/ADC_VOLTAGE.d ./Lib/Src/ADC_VOLTAGE.o ./Lib/Src/ADC_VOLTAGE.su
+	-$(RM) ./Lib/Src/ADC_VOLTAGE.cyclo ./Lib/Src/ADC_VOLTAGE.d ./Lib/Src/ADC_VOLTAGE.o ./Lib/Src/ADC_VOLTAGE.su ./Lib/Src/UART_FREQUENT.cyclo ./Lib/Src/UART_FREQUENT.d ./Lib/Src/UART_FREQUENT.o ./Lib/Src/UART_FREQUENT.su
 
 .PHONY: clean-Lib-2f-Src
 

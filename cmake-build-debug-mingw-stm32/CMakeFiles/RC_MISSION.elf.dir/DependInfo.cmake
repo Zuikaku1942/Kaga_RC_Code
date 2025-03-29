@@ -64,6 +64,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/CubeIDE/RC_MISSION/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" "gcc" "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d"
   "C:/CubeIDE/RC_MISSION/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c" "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj" "gcc" "CMakeFiles/RC_MISSION.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_adc.c.obj.d"
   "C:/CubeIDE/RC_MISSION/Lib/Src/ADC_VOLTAGE.c" "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj" "gcc" "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/ADC_VOLTAGE.c.obj.d"
+  "C:/CubeIDE/RC_MISSION/Lib/Src/UART_FREQUENT.c" "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj" "gcc" "CMakeFiles/RC_MISSION.elf.dir/Lib/Src/UART_FREQUENT.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

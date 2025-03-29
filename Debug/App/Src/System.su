@@ -1,2 +1,2 @@
-../App/Src/System.c:12:6:Light_init	16	static
-../App/Src/System.c:29:6:Get_voltage	8	static
+../App/Src/System.c:18:6:Light_init	16	static
+../App/Src/System.c:35:6:Get_voltage	8	static

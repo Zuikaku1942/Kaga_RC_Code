@@ -107,7 +107,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
-    HAL_TIM_Base_Start_IT(&htim5);//�?启tim，于后台每隔1s自动�?�?
+  HAL_TIM_Base_Start_IT(&htim5);//开启tim
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -169,7 +169,36 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+#ifdef __GNUC__
+/* With GCC, small printf (option LD Linker->Libraries->Small printf set to 'Yes') calls __io_putchar() */
+/**
+ * @brief  重定向printf函数输出到UART1 (GCC/CubeIDE编译器版本)
+ * @note   此实现将printf输出重定向到UART1，波特率为2Mbps
+ *         支持在CubeIDE中使用printf进行调试输出
+ * @param  ch: 要发送的字符
+ * @retval 发送的字符
+ */
+int __io_putchar(int ch)
+{
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  return ch;
+}
+#else
+/* 为Keil编译器重定向fputc函数 */
+/**
+ * @brief  重定向printf函数输出到UART1 (Keil MDK编译器版本)
+ * @note   此实现将printf输出重定向到UART1，波特率为2Mbps
+ *         支持在Keil中使用printf进行调试输出
+ * @param  ch: 要发送的字符
+ * @param  f: 文件指针(未使用)
+ * @retval 发送的字符
+ */
+int fputc(int ch, FILE *f)
+{
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
+  return ch;
+}
+#endif
 /* USER CODE END 4 */
 
 /**

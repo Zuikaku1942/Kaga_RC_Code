@@ -86,7 +86,13 @@ void MX_TIM5_Init(void)
 {
 
   /* USER CODE BEGIN TIM5_Init 0 */
-
+  /* TIM5用于触发ADC采样，中断频率配置为约30kHz
+   * 计算公式：中断频率 = 时钟频率 / (Prescaler+1) / (Period+1)
+   * 实际值：84MHz / 1 / 2800 ≈ 30kHz
+   * 
+   * 此中断频率决定ADC采样率，对应UART数据发送频率
+   * 需要波特率足够高以支持数据传输(30kHz*6字节*10位=1.8Mbps)
+   */
   /* USER CODE END TIM5_Init 0 */
 
   TIM_ClockConfigTypeDef sClockSourceConfig = {0};
@@ -96,9 +102,9 @@ void MX_TIM5_Init(void)
 
   /* USER CODE END TIM5_Init 1 */
   htim5.Instance = TIM5;
-  htim5.Init.Prescaler = 0;
+  htim5.Init.Prescaler = 0;       // 预分频器为0(实际值1)，不分频
   htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim5.Init.Period = 2800-1;
+  htim5.Init.Period = 2800-1;     // 周期值，84MHz/2800≈30kHz中断频率
   htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim5) != HAL_OK)

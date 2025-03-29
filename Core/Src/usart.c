@@ -32,14 +32,18 @@ void MX_USART1_UART_Init(void)
 {
 
   /* USER CODE BEGIN USART1_Init 0 */
-
+  /* USART1用于发送ADC采样数据
+   * 波特率设置为2Mbps，支持30kHz采样率下的数据传输需求
+   * 计算：30kHz * 6字节/帧 * 10位/字节 = 1.8Mbps
+   * 2Mbps波特率提供了足够的传输带宽，有约10%的余量
+   */
   /* USER CODE END USART1_Init 0 */
 
   /* USER CODE BEGIN USART1_Init 1 */
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 2000000;
+  huart1.Init.BaudRate = 2000000;  // 2Mbps波特率，满足1.8Mbps的数据传输需求
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
